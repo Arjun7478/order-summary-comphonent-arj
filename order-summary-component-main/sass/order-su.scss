@@ -1,0 +1,122 @@
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+.main {
+    position: relative;
+    font-family: "Red Hat Display", sans-serif;
+    overflow-y: auto;
+}
+.background-img {
+    position: absolute;
+
+    width: 100%;
+    z-index: 100;
+    inset: 0;
+}
+.container {
+    padding: 20px;
+}
+.order-summary {
+    position: relative;
+
+    z-index: 200;
+    max-width: 440px;
+    max-height: 565px;
+
+    margin-inline: auto;
+
+    margin-top: 20px;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.15);
+
+    @media (min-width: 768px) {
+        max-height: 690px;
+    }
+}
+.img {
+    display: block;
+    width: 100%;
+}
+.deatails {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+}
+.text-box {
+    padding: 15px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 35px;
+    }
+}
+.heading-pri {
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 10px;
+}
+
+.pri-sub {
+    color: hsl(224, 23%, 55%);
+}
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.di-flex {
+    display: flex;
+}
+.music-icon {
+    margin-right: 10px;
+}
+.an-plan {
+    color: hsl(223, 47%, 23%);
+}
+.price {
+    color: hsl(224, 23%, 55%);
+}
+
+.pro-btn {
+    font-family: "Red Hat Display", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 32px;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+
+    &:hover {
+        background-color: hsl(245, 53%, 49%);
+    }
+}
+.cancel-option {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
